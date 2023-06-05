@@ -5,4 +5,4 @@ layout: splash
 author_profile: false
 ---
 
-Coordination Ring
+{% include ring_slider.html %}

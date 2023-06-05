@@ -5,4 +5,4 @@ layout: splash
 author_profile: false
 ---
 
-Cramped
+{% include cramped_slider.html %}

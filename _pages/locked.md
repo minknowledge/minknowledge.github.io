@@ -5,4 +5,4 @@ layout: splash
 author_profile: false
 ---
 
-Locked in
+{% include locked_slider.html %}
