@@ -5,4 +5,4 @@ layout: splash
 author_profile: false
 ---
 
-Schelling point
+{% include schelling_slider.html %}
