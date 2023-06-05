@@ -18,7 +18,7 @@ feature_row1:
   - image_path: /assets/images/overcooked_schelling.png
     alt: "Schelling point Overcooked layout"
     title: "Schelling Point"
-    excerpt: "description of env. addding more text for scaling reasons"
+    excerpt: "The cooks need to coordinate on who gets to occupy the useful central tile to deposit two onions within the time limit."
     url: "/schelling"
     btn_label: "More details"
     btn_class: "btn--primary"
@@ -26,7 +26,7 @@ feature_row2:
   - image_path: /assets/images/overcooked_ring.png
     alt: "Coordination ring Overcooked layout"
     title: "Coordination Ring"
-    excerpt: "description of env. addding more text for scaling reasons"
+    excerpt: "The cooks need to deposite an onion and a tomato into the same pot. The cooks cannot occupy the same spot, requiring them to coordinate on how they pass around the central island."
     url: "/ring"
     btn_label: "More details"
     btn_class: "btn--primary"
@@ -34,7 +34,7 @@ feature_row3:
   - image_path: /assets/images/overcooked_cramped.png
     alt: "Cramped room Overcooked layout"
     title: "Cramped Room"
-    excerpt: "description of env. addding more text for scaling reasons"
+    excerpt: "The cooks need to coordinate on low-level movements to avoid getting in each other's way in order to get two onions into the pot within the time limit."
     url: "/cramped"
     btn_label: "More details"
     btn_class: "btn--primary"
@@ -42,7 +42,7 @@ feature_row4:
   - image_path: /assets/images/overcooked_tiny.png
     alt: "Locked in Overcooked layout"
     title: "Locked In"
-    excerpt: "description of env. addding more text for scaling reasons"
+    excerpt: "Cooks need to coordinate on the timing of a recipe involving onions and tomatoes using a single pot. Includes a fully and partially-observed version."
     url: "/locked"
     btn_label: "More details"
     btn_class: "btn--primary"
