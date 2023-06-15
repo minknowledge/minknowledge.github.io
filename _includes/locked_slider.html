@@ -218,20 +218,26 @@ h1 {text-align: center;}
 .box {
   float: left;
   width: 375px;
-  height: 440px;
+  height: 440px auto;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
 }
 
-.swiper-container {
-  width: 100%;
-  height: 100%;
+<!-- .swiper-container { -->
+<!--   width: 100%; -->
+<!--   height: 50%; -->
+<!-- } -->
+
+.swiper-pagination {
+  position: relative;
 }
 
 /* Change the pagination color */
 .swiper-pagination-bullet {
   background-color: #000000;
+  position: relative;
+  top: -30px;
 }
 
 /* Change the active pagination color */
@@ -249,160 +255,300 @@ h1 {text-align: center;}
   border-radius: 15px;
 }
 
+@media all and (min-width:0px) and (max-width: 1024px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #FFFFFF; 
+    top: 150px;
+  }
+}
+
+.masthead {
+    background: grey;
+}
+.greedy-nav { 
+   background: grey;
+}
+.greedy-nav a{ 
+   color: white;
+}
+
 </style>
 
 <script>
-  var mySwiper1 = new Swiper('#swiper1', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+  if(! /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    var mySwiper1 = new Swiper('#swiper1', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper2 = new Swiper('#swiper2', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper2 = new Swiper('#swiper2', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper3 = new Swiper('#swiper3', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper3 = new Swiper('#swiper3', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper4 = new Swiper('#swiper4', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper4 = new Swiper('#swiper4', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper5 = new Swiper('#swiper5', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper5 = new Swiper('#swiper5', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper6 = new Swiper('#swiper6', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper6 = new Swiper('#swiper6', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper7 = new Swiper('#swiper7', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper7 = new Swiper('#swiper7', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
 
-  var mySwiper8 = new Swiper('#swiper8', {
-    // Configure options here
-    speed: 200,
-    effect: 'fade',
-    loop: true,
-    autoplay: {
-      delay: 1000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+    var mySwiper8 = new Swiper('#swiper8', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } else {
+    var mySwiper1 = new Swiper('#swiper1', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper2 = new Swiper('#swiper2', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper3 = new Swiper('#swiper3', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper4 = new Swiper('#swiper4', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper5 = new Swiper('#swiper5', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper6 = new Swiper('#swiper6', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper7 = new Swiper('#swiper7', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    var mySwiper8 = new Swiper('#swiper8', {
+      // Configure options here
+      speed: 200,
+      effect: 'fade',
+      loop: true,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
   var boxElement1 = document.querySelector('#swiper1');
 
   boxElement1.addEventListener('mouseenter', function() {

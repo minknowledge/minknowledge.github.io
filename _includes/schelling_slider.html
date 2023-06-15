@@ -104,6 +104,16 @@
   border-radius: 15px;
 }
 
+.masthead {
+    background: grey;
+}
+.greedy-nav { 
+   background: grey;
+}
+.greedy-nav a{ 
+   color: white;
+}
+
 </style>
 
 <script>
@@ -146,6 +156,12 @@
   });
 
   var boxElement1 = document.querySelector('#swiper1');
+
+  <!-- var tappped = false; -->
+
+  <!-- {#swiper1}.on('tap', function(){ -->
+  <!--      tapped = true; -->
+  <!-- }); -->
 
   boxElement1.addEventListener('mouseenter', function() {
     mySwiper1.autoplay.stop();
