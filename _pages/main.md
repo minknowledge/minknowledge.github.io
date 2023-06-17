@@ -8,7 +8,7 @@ header:
   overlay_filter: "0.5"
   actions:
     - label: <i class="fas fa-fw fa-file-pdf"></i> Paper
-      url: "/assets/pdfs/paper.pdf"
+      url: "https://arxiv.org/abs/2306.09309"
     # - label: <i class="fab fa-fw fa-github"></i> Code
     #   url: "/assets/pdfs/paper.pdf"
 excerpt: <font size="5"> Niklas Lauffer, Ameesh Shah, Micah Carroll, Michael Dennis, Stuart Russell </font>

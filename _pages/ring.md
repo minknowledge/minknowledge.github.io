@@ -13,10 +13,10 @@ At first examination, one might predict that there should
 be multiple strategic equivalence classes in this problem, perhaps resulting from
 which agent gets which vegetable, which pot to use, or the
 various options for how the agents could walk around the
-central island to stay out of each other’s way. However, this environment has only a single class containing
+central island to stay out of each other’s way. However, this environment has only a single strategic equivalence class containing
 all of these variations!
 Conceptually, this means that both agents do
-not need to know anything about their co-policy in order to
+not need to know anything about their partner's policy in order to
 play optimally; agents require no preexisting agreements on
 how to successfully coordinate in the environment.
 
