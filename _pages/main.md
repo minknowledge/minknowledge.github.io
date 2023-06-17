@@ -61,7 +61,7 @@ In this research project, we explore and formalize the idea that in multiagent s
 
 {% include figure image_path="assets/images/br_viz.png" alt="Visualization of how the SER is obtained from the best-response map" %}
 
-We introduce the idea of a **strategic equivalence relation (SER)**: strategies (on the left) are equivalent if they induce the same best response (on the right) from the other player. SERs naturally partition the strategy space into different conventions for solving the game. Below you kind find links to visualizations of the SERs for the strategies in various *Overcooked* environments.
+We introduce the idea of a **strategic equivalence relation (SER)**: strategies (on the left) are equivalent if they induce the same best response (on the right) from the other player. SERs naturally partition the strategy space (left) into different conventions for solving the game. Below you can find links to visualizations of the SERs for the strategies in various *Overcooked* environments.
 
 
 {% include feature_row id="feature_row1" type="left" %}
